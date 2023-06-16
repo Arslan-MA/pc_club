@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div style="margin: auto;
+                margin-top: 20px;
+                width: 600px;
+                border: 3px solid;
+                text-align: center;">
+        <form action="" method="post" style="font-size: 25px;
+                                             padding: 20px;">
+            {% csrf_token %}
+
+            <label>Ваше имя</label><br>
+            <input name="visitor_name" type="text" style="font-size: 20px;
+            width: 350px;
+            margin-top: 10px;"><br><br>
+
+            <label>Ваша фамилия</label><br>
+            <input name="visitor_surname" type="text" style="font-size: 20px;
+            width: 350px;
+            margin-top: 10px;"><br><br>
+
+            <label>Ваш возраст</label><br>
+            <input name="visitor_age" type="number" style="font-size: 20px;
+            width: 350px;
+            margin-top: 10px;"><br><br>
+
+            <label>Ваш пол</label><br>
+            <select name="visitor_gender" style="font-size: 20px;
+            width: 350px;
+            margin-top: 10px;">
+                <option value="Мужчина">Мужчина</option>
+                <option value="Женщина">Женщина</option>
+            </select><br><br>
+
+            <label>Работаете ли вы где-либо ? (Да / Нет)</label><br>
+            <input name="visitor_work_status" type="text" style="font-size: 20px;
+            width: 350px;
+            margin-top: 10px;"><br><br>
+
+            <laber>Какой ваш любимый жанр игры ?</laber><br>
+            <input name="visitor_favorite_genre" type="text" style="font-size: 20px;
+            width: 350px;
+            margin-top: 10px;"><br><br>
+
+            <laber>В какое время вам удобна приходить ?</laber><br>
+            <input name="visitor_visiting_time" type="time" style="font-size: 20px;
+            margin-top: 10px;"><br><br>
+
+            <label>Какая ваша любимая платформа для игры ?</label><br>
+            <select name="visitor_favorite_platform" style="font-size: 20px;
+            width: 350px;
+            margin-top: 10px;">
+                <option value="PC">PC</option>
+                <option value="XBOX">XBOX</option>
+                <option value="Playstation">Playstation</option>
+            </select><br><br>
+
+            <label>Из какой вы страны ?</label><br>
+            <input name="visitor_country" type="text" style="font-size: 20px;
+            width: 350px;
+            margin-top: 10px;"><br><br>
+
+            <label>Что вас не устраивает в нашем клубе ?</label><br>
+            <textarea name="visitor_opinion" style="font-size: 20px;
+            width: 350px;
+            height: 100px;
+            margin-top: 10px;"></textarea><br>
+
+            <button type="submit" style="font-size: 20px;
+            margin-top: 10px;">Сохранить</button>
+        </form>
+    </div>
+</body>
+
+</html>
